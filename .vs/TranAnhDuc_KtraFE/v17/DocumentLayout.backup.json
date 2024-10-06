@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,8 +37,17 @@
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Kiemtra.cshtml",
+              "DocumentMoniker": "D:\\ASPNET MVC\\TranAnhDuc_KtraFE\\TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
+              "RelativeDocumentMoniker": "TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
+              "ToolTip": "D:\\ASPNET MVC\\TranAnhDuc_KtraFE\\TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
+              "RelativeToolTip": "TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAAAF0BAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-06T11:01:46.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -54,19 +63,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Kiemtra.cshtml",
-              "DocumentMoniker": "D:\\ASPNET MVC\\TranAnhDuc_KtraFE\\TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
-              "RelativeDocumentMoniker": "TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
-              "ToolTip": "D:\\ASPNET MVC\\TranAnhDuc_KtraFE\\TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
-              "RelativeToolTip": "TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
-              "ViewState": "AgIAAP8BAAAAAAAAAAAAAAoCAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-06T11:01:46.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\ASPNET MVC\\TranAnhDuc_KtraFE\\TranAnhDuc_KtraFE\\Controllers\\HomeController.cs",
@@ -76,6 +72,10 @@
               "ViewState": "AQIAAAQAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T11:01:46.165Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

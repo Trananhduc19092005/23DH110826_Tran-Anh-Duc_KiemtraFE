@@ -337,17 +337,17 @@
 
 
                                 <div class="section-left__box1__sanpham__dongia">
-                                    <span> 8.700.000 <sup>đ</sup></span>
+                                    <span class="dongiabox1"> 8700000 <sup>đ</sup></span>
                                 </div>
 
                                 <div class="section-left__box1__sanpham__soluong">
                                     <button onclick="PlusBtn1()"> + </button>
-                                    <span class="numberbox1"> 1 </span>
+                                    <span class="numberbox1"> 0 </span>
                                     <button onclick="MinusBtn1()"> - </button>
                                 </div>
 
                                 <div class="section-left__box1__sanpham__thanhtien">
-                                    <span> 8.400.000 <sup> đ </sup></span>
+                                    <span class="thanhtien_box1"> 1 <sup> đ </sup></span>
                                 </div>
 
 
@@ -487,6 +487,10 @@
         count++;
         number.innerHTML = count;
 
+        const dongia = parseFloat(document.querySelector('.dongiabox1').innerHTML);
+        const Thanhtienbox1 = document.querySelector('.thanhtien_box1');
+        Thanhtienbox1.innerHTML = (count * dongia);
+        Thanhtienbox1.innerHTML = Thanhtienbox1.innerHTML + "VND";
     }
 
     function MinusBtn1() {
@@ -494,6 +498,11 @@
         let count = parseInt(number.textContent);
         count--;
         number.innerHTML = count;
+
+        const dongia = parseFloat(document.querySelector('.dongiabox1').innerHTML);
+        const Thanhtienbox1 = document.querySelector('.thanhtien_box1');
+        Thanhtienbox1.innerHTML = (parseFloat(Thanhtienbox1.innerHTML) - dongia);
+        Thanhtienbox1.innerHTML = Thanhtienbox1.innerHTML + "VND";
     }
 
     function PlusBtn2() {
@@ -520,7 +529,7 @@
         // thanh tien
         const Caculate = document.querySelector('.thanhtien_box2');
         Caculate.innerHTML = (parseInt(Caculate.innerHTML) - dongia);
-        Caculate.innerHTML = Caculate.innerHTML + '<sup> đ <\sup';
+        Caculate.innerHTML = Caculate.innerHTML + "VND";
 
     }
 
