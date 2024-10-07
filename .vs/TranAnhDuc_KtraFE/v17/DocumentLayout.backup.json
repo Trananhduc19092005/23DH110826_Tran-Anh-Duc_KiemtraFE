@@ -44,10 +44,14 @@
               "RelativeDocumentMoniker": "TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
               "ToolTip": "D:\\ASPNET MVC\\TranAnhDuc_KtraFE\\TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
               "RelativeToolTip": "TranAnhDuc_KtraFE\\Views\\Home\\Kiemtra.cshtml",
-              "ViewState": "AgIAAEsBAAAAAAAAAAAAAF0BAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAB4CAAAAAAAAAAAAAC4CAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-06T11:01:46.16Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -72,10 +76,6 @@
               "ViewState": "AQIAAAQAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T11:01:46.165Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

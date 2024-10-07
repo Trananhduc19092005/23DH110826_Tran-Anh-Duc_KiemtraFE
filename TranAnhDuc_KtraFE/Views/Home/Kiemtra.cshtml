@@ -322,7 +322,7 @@
                         <div class="p-3 d-flex flex-column section-left__box1">
                             <div class="section-left__box1__button">
                                 <form>
-                                    <input type="checkbox" class="selection"/>
+                                    <input type="checkbox" class="selection" id="checkbox1"/>
                                     <i class="fa-solid fa-bag-shopping"></i>
                                     Gia Dụng Việt >
                                 </form>
@@ -366,7 +366,7 @@
                         <div class="p-3 section-left__box2">
                             <div class="section-left__box2__button">
                                 <form>
-                                    <input type="checkbox" class="selection" />
+                                    <input type="checkbox" class="selection" id="checkbox2" />
                                     <i class="fa-solid fa-bag-shopping"></i>
                                     Gia Dụng Việt >
                                 </form>
@@ -400,7 +400,7 @@
 
 
                                 <div class="section-left__box2__sanpham__icon">
-                                    <i class="fa-solid fa-trash-can"></i>
+                                    <i id ="trash-can-icon" class="fa-solid fa-trash-can"></i>
                                 </div>
                             </div>
 
@@ -449,8 +449,8 @@
                             <div class="d-flex section-right__thanhtoan__tinhtong">
                                 <p> Tongtien :  </p>
 
-                                <p>
-                                    8.480.000 <sup> đ </sup>
+                                <p class="tongtien">
+                                    0 <sup> đ </sup>
                                 </p>
 
                             </div>
@@ -467,7 +467,7 @@
 
                     </div>
                     <div class="d-flex justify-content-center align-items-center section-right__button">
-                        <a href="##"> Mua Hàng (1) </a>
+                        <a href="##"> Mua Hàng <span id="muahangcount"> 0 </span> </a>
                     </div>
 
                 </div>
@@ -479,7 +479,7 @@
 
 <script language="javascript">
 
-    // BUTTON
+    // ONCLICK
 
     function PlusBtn1() {
         const number = document.querySelector('.numberbox1');
@@ -542,6 +542,41 @@
             selection.checked = selectionall.checked;
         })
     })
+    
+
+    // calculate muahang
+    const muahangcount = document.getElementById('muahangcount');
+    const checkbox1 = document.getElementById('checkbox1');
+    const checkbox2 = document.getElementById('checkbox2');
+    const tamtinh1 = document.getElementById('tamtinh');
+    const thanhtienbox2 = document.querySelector('.thanhtien_box2');
+    const thanhtienbox1 = document.querySelector('.thanhtien_box1');
+    const tongtien = document.querySelector('.tongtien');
+
+
+    function tamtinh() {
+        let count = 0;
+        let total = 0;
+        if (checkbox1.checked) {
+            total += parseFloat(thanhtienbox1.innerHTML);
+            count++;
+        }
+
+        if (checkbox2.checked) {
+            total += parseFloat(thanhtienbox2.innerHTML);
+            count++;
+        }
+
+        muahangcount.innerHTML = count;
+        tamtinh1.innerHTML = total;
+        tongtien.innerHTML = total;
+    }
+
+    checkbox1.addEventListener('change', tamtinh)
+    checkbox2.addEventListener('change', tamtinh)
+
+    // trash can icon
 
     
+
 </script>
